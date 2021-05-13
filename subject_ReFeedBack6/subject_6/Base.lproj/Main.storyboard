@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="subject_6" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QWL-EI-SV6">
+                                <rect key="frame" x="166.66666666666666" y="147" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="iNB-VH-K7V">
+                                <rect key="frame" x="28" y="248" width="319" height="31"/>
+                            </slider>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3A8-Rc-ZTg">
+                                <rect key="frame" x="164.66666666666666" y="358" width="46" height="30"/>
+                                <state key="normal" title="判定！"/>
+                                <connections>
+                                    <action selector="markScaleButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zFL-lc-gLC"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KDH-9X-xKQ">
+                                <rect key="frame" x="313" y="286" width="29" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bZv-sM-yLc">
+                                <rect key="frame" x="16" y="286" width="8" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="iNB-VH-K7V" secondAttribute="trailing" constant="30" id="2K4-VO-P3z"/>
+                            <constraint firstItem="bZv-sM-yLc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="6OX-s3-lJB"/>
+                            <constraint firstItem="iNB-VH-K7V" firstAttribute="top" secondItem="QWL-EI-SV6" secondAttribute="bottom" constant="80" id="ET4-mu-Uab"/>
+                            <constraint firstItem="iNB-VH-K7V" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="FGE-yt-IgB"/>
+                            <constraint firstItem="bZv-sM-yLc" firstAttribute="baseline" secondItem="KDH-9X-xKQ" secondAttribute="baseline" id="JB0-UI-uz5"/>
+                            <constraint firstItem="bZv-sM-yLc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="242" id="RDP-AJ-ziX"/>
+                            <constraint firstItem="QWL-EI-SV6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="103" id="TlQ-JJ-Qar"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KDH-9X-xKQ" secondAttribute="trailing" constant="33" id="XBl-qj-G58"/>
+                            <constraint firstItem="QWL-EI-SV6" firstAttribute="centerX" secondItem="3A8-Rc-ZTg" secondAttribute="centerX" id="gBL-lM-sGO"/>
+                            <constraint firstItem="QWL-EI-SV6" firstAttribute="centerX" secondItem="iNB-VH-K7V" secondAttribute="centerX" id="lvW-mK-46p"/>
+                            <constraint firstItem="3A8-Rc-ZTg" firstAttribute="top" secondItem="iNB-VH-K7V" secondAttribute="bottom" constant="80" id="sd3-cD-GiZ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="randomNumberLabel" destination="QWL-EI-SV6" id="EiB-48-OoC"/>
+                        <outlet property="scaleSlider" destination="iNB-VH-K7V" id="7MX-BX-7Lp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="34.782608695652179" y="93.75"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
